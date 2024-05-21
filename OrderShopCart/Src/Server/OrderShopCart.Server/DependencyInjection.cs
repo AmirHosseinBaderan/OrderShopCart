@@ -21,7 +21,7 @@ public static class DependencyInjection
         return services;
     }
 
-    public static IServiceCollection CinfigureValidator(this IServiceCollection services)
+    public static IServiceCollection ConfigureValidator(this IServiceCollection services)
     {
 
         services.AddValidatorsFromAssemblies(Assemblies);
