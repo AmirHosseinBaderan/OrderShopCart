@@ -1,12 +1,19 @@
 ﻿
 
+using OrderShopCart.Application.CommandAndQuery;
+using OrderShopCart.Dto;
+
 namespace OrderShopCart.Server.Endpoints.Product;
 
 public class GetList : IEndpoint, IEnpointHandler<GetProductsListRequest, GetProductsListResponse>
 {
-    public Task<GetProductsListResponse> HandlerAsync(GetProductsListRequest request, IMediator mediator, IMapper mapper)
+    public async Task<GetProductsListResponse> HandlerAsync(GetProductsListRequest request, IMediator mediator, IMapper mapper)
     {
-        throw new NotImplementedException();
+        GetProductListQuery query = mapper.Map<GetProductListQuery>(request);
+        IEnumerable<Domain.Aggregates.Product> result = await mediator.Send(query);
+
+        IEnumerable<ProductDto> products = mapper.Map<IEnumerable<ProductDto>>(result);
+        return new(products);
     }
 
     public void MapEndpoint(IEndpointRouteBuilder app)

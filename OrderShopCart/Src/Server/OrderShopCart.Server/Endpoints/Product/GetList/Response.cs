@@ -1,3 +1,5 @@
-﻿namespace OrderShopCart.Server.Endpoints.Product;
+﻿using OrderShopCart.Dto;
 
-public record GetProductsListResponse();
+namespace OrderShopCart.Server.Endpoints.Product;
+
+public record GetProductsListResponse(IEnumerable<ProductDto> Products);

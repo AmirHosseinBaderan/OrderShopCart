@@ -19,6 +19,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\..\Application\OrderShopCart.Application\OrderShopCart.Application.csproj" />
 	  <ProjectReference Include="..\..\Application\OrderShopCart.Builder\OrderShopCart.Builder.csproj" />
+	  <ProjectReference Include="..\..\Domain\OrderShopCart.Dto\OrderShopCart.Dto.csproj" />
 	  <ProjectReference Include="..\..\Infrastructure\OrderShopCart.Infrastructure\OrderShopCart.Infrastructure.csproj" />
 	</ItemGroup>
 
