@@ -10,8 +10,14 @@
 		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
 		<PackageReference Include="Mapster.DependencyInjection" />
 		<PackageReference Include="Mapster" />
+		<PackageReference Include="MediatR" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
 		<PackageReference Include="Swashbuckle.AspNetCore" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Application\OrderShopCart.Application\OrderShopCart.Application.csproj" />
+	  <ProjectReference Include="..\..\Application\OrderShopCart.Builder\OrderShopCart.Builder.csproj" />
 	</ItemGroup>
 
 </Project>
