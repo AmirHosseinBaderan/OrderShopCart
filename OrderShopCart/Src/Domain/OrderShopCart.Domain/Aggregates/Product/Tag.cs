@@ -3,7 +3,7 @@ namespace OrderShopCart.Domain.Aggregates;
 
 public class Tag : ValueObject<Tag>
 {
-    public string Value { get; set; } = null!:
+    public string Value { get; set; } = null!;
 
 
     public override IEnumerable<object> GetEqualityComponents()
