@@ -1,4 +1,5 @@
 using OrderShopCart.Application;
+using OrderShopCart.Infrastructure;
 using OrderShopCart.Server;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 builder.Services.ConfigureApplicationLayer();
+builder.Services.ConfigureInfrastructureLayer(builder.Configuration);
 builder.Services.ConfigureMapster();
 builder.Services.ConfigureValidator();
 builder.Services.ConfigureCors();

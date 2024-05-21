@@ -13,11 +13,13 @@
 		<PackageReference Include="MediatR" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
 		<PackageReference Include="Swashbuckle.AspNetCore" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <ProjectReference Include="..\..\Application\OrderShopCart.Application\OrderShopCart.Application.csproj" />
 	  <ProjectReference Include="..\..\Application\OrderShopCart.Builder\OrderShopCart.Builder.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\OrderShopCart.Infrastructure\OrderShopCart.Infrastructure.csproj" />
 	</ItemGroup>
 
 </Project>
