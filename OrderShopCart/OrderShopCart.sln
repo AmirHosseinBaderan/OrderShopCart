@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{7DCDD453-231F-4116-9D96-52F4E8378348}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{CFA5EB23-F668-484F-B20D-986060C4A33E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{42D7730D-61AC-40BC-A61A-8264D15F2424}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DA78A392-1B20-4CD3-8C66-C6E648E3A614}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{84CA7EFF-DE4A-45E6-AB55-9B4545CDEA47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderShopCart.Application", "Src\Application\OrderShopCart.Application\OrderShopCart.Application.csproj", "{07EBAFA8-D2EF-4EF6-9B23-062BC74BD8C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5A636E6-CEC8-4401-B66B-1C04CFA02293}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderShopCart.Domain", "Src\Domain\OrderShopCart.Domain\OrderShopCart.Domain.csproj", "{C5F30E15-A4B1-4CCD-BA7C-28F64F054C42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderShopCart.Infrastructure", "Src\Infrastructure\OrderShopCart.Infrastructure\OrderShopCart.Infrastructure.csproj", "{DC4437A1-1891-423A-8E43-CF9A418B70C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderShopCart.Builder", "OrderShopCart.Builder\OrderShopCart.Builder.csproj", "{8D4957CC-25D4-484A-B4EC-7270EA2B3D14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderShopCart.Server", "Src\Server\OrderShopCart.Server\OrderShopCart.Server.csproj", "{A3AFA612-83FD-48F3-970C-7DE4942229CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07EBAFA8-D2EF-4EF6-9B23-062BC74BD8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EBAFA8-D2EF-4EF6-9B23-062BC74BD8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EBAFA8-D2EF-4EF6-9B23-062BC74BD8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EBAFA8-D2EF-4EF6-9B23-062BC74BD8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F30E15-A4B1-4CCD-BA7C-28F64F054C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F30E15-A4B1-4CCD-BA7C-28F64F054C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F30E15-A4B1-4CCD-BA7C-28F64F054C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F30E15-A4B1-4CCD-BA7C-28F64F054C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4437A1-1891-423A-8E43-CF9A418B70C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4437A1-1891-423A-8E43-CF9A418B70C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4437A1-1891-423A-8E43-CF9A418B70C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4437A1-1891-423A-8E43-CF9A418B70C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D4957CC-25D4-484A-B4EC-7270EA2B3D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4957CC-25D4-484A-B4EC-7270EA2B3D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4957CC-25D4-484A-B4EC-7270EA2B3D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4957CC-25D4-484A-B4EC-7270EA2B3D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AFA612-83FD-48F3-970C-7DE4942229CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AFA612-83FD-48F3-970C-7DE4942229CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AFA612-83FD-48F3-970C-7DE4942229CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AFA612-83FD-48F3-970C-7DE4942229CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CFA5EB23-F668-484F-B20D-986060C4A33E} = {7DCDD453-231F-4116-9D96-52F4E8378348}
+		{42D7730D-61AC-40BC-A61A-8264D15F2424} = {7DCDD453-231F-4116-9D96-52F4E8378348}
+		{DA78A392-1B20-4CD3-8C66-C6E648E3A614} = {7DCDD453-231F-4116-9D96-52F4E8378348}
+		{84CA7EFF-DE4A-45E6-AB55-9B4545CDEA47} = {7DCDD453-231F-4116-9D96-52F4E8378348}
+		{07EBAFA8-D2EF-4EF6-9B23-062BC74BD8C3} = {CFA5EB23-F668-484F-B20D-986060C4A33E}
+		{C5F30E15-A4B1-4CCD-BA7C-28F64F054C42} = {42D7730D-61AC-40BC-A61A-8264D15F2424}
+		{DC4437A1-1891-423A-8E43-CF9A418B70C0} = {DA78A392-1B20-4CD3-8C66-C6E648E3A614}
+		{8D4957CC-25D4-484A-B4EC-7270EA2B3D14} = {CFA5EB23-F668-484F-B20D-986060C4A33E}
+		{A3AFA612-83FD-48F3-970C-7DE4942229CC} = {84CA7EFF-DE4A-45E6-AB55-9B4545CDEA47}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {168D9F16-978A-4DB3-A96B-F821E0E6A6E9}
+	EndGlobalSection
+EndGlobal
