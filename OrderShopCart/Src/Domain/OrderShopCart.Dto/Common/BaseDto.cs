@@ -2,7 +2,7 @@
 
 public record BaseDto
 {
-    public Guid Id { get; set; }
+    public string Id { get; set; } = null!;
 
     public DateTime CreatedOn { get; set; }
 
