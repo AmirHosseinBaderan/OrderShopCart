@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using OrderShopCart.Domain.Aggregates;
 
-namespace OrderShopCart.Infrastructure.Presistance
+namespace OrderShopCart.Infrastructure.Presistance;
+
+public class OrderDbContext(DbContextOptions<OrderDbContext> options) : DbContext(options)
 {
-    internal class DbContext
+    public DbSet<Product> Products => Set<Product>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        var infrastructureAssebmly = typeof(IAssemblyMarker).Assembly;
+        modelBuilder.ApplyConfigurationsFromAssembly(infrastructureAssebmly);
     }
 }
