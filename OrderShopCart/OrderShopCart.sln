@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderShopCart.Server", "Src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderShopCart.Builder", "Src\Application\OrderShopCart.Builder\OrderShopCart.Builder.csproj", "{4315EE35-B01D-4C92-B40C-B08510EE8EE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderShopCart.Dto", "Src\Domain\OrderShopCart.Dto\OrderShopCart.Dto.csproj", "{F530A52B-3FAA-4417-B1E8-E8AC12BC1054}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{4315EE35-B01D-4C92-B40C-B08510EE8EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4315EE35-B01D-4C92-B40C-B08510EE8EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4315EE35-B01D-4C92-B40C-B08510EE8EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F530A52B-3FAA-4417-B1E8-E8AC12BC1054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F530A52B-3FAA-4417-B1E8-E8AC12BC1054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F530A52B-3FAA-4417-B1E8-E8AC12BC1054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F530A52B-3FAA-4417-B1E8-E8AC12BC1054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{DC4437A1-1891-423A-8E43-CF9A418B70C0} = {DA78A392-1B20-4CD3-8C66-C6E648E3A614}
 		{A3AFA612-83FD-48F3-970C-7DE4942229CC} = {84CA7EFF-DE4A-45E6-AB55-9B4545CDEA47}
 		{4315EE35-B01D-4C92-B40C-B08510EE8EE2} = {CFA5EB23-F668-484F-B20D-986060C4A33E}
+		{F530A52B-3FAA-4417-B1E8-E8AC12BC1054} = {42D7730D-61AC-40BC-A61A-8264D15F2424}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {168D9F16-978A-4DB3-A96B-F821E0E6A6E9}

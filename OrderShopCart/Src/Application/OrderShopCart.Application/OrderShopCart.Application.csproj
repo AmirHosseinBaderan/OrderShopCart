@@ -3,4 +3,10 @@
 	  <PackageReference Include="MediatR" />
 	  <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommandAndQuery\Product\Command\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\OrderShopCart.Domain\OrderShopCart.Domain.csproj" />
+  </ItemGroup>
 </Project>
