@@ -11,7 +11,7 @@ public class Product : AggregateRootBase
     private readonly IEnumerable<Tag> _tags = null!;
 
 
-    public ICollection<Tag> Tags => _tags.ToList();
+    public List<Tag> Tags => _tags.ToList();
 
     public string Title { get; set; } = null!;
 
