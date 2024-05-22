@@ -8,3 +8,5 @@ public record ProductDto : BaseDto
 
     public IEnumerable<string> Tags { get; set; } = null!;
 }
+
+public record BuildPrdouctDto(string Title, decimal Price, string Description);
