@@ -23,4 +23,11 @@
 	  <ProjectReference Include="..\..\Infrastructure\OrderShopCart.Infrastructure\OrderShopCart.Infrastructure.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Endpoints\Group\GetList\" />
+	  <Folder Include="Endpoints\Group\Get\" />
+	  <Folder Include="Endpoints\Group\Delete\" />
+	  <Folder Include="Endpoints\Group\Update\" />
+	</ItemGroup>
+
 </Project>
