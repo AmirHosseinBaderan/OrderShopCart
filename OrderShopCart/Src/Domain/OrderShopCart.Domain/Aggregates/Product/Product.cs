@@ -8,8 +8,7 @@ public class Product : AggregateRootBase
         _tags = [];
     }
 
-    private readonly IEnumerable<Tag> _tags = null!;
-
+    private readonly List<Tag> _tags = null!;
 
     public List<Tag> Tags => _tags.ToList();
 
@@ -19,5 +18,9 @@ public class Product : AggregateRootBase
 
     public decimal Price { get; set; }
 
+    public void AddTag(Tag tag)
+        => _tags.Add(tag);
 
+    public void AddTagRange(IEnumerable<Tag> tag)
+       => _tags.AddRange(tag);
 }
