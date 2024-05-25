@@ -1,4 +1,6 @@
-﻿namespace OrderShopCart.Builder;
+﻿using OrderShopCart.Domain;
+
+namespace OrderShopCart.Builder;
 
 public class ProductBuilder
 {
@@ -10,6 +12,7 @@ public class ProductBuilder
 
     public ProductBuilder CreateDraft(string title, string description, decimal price)
     {
+        _product.Id = EntityId.CreateUniqueId();
         _product.Title = title;
         _product.Description = description;
         _product.Price = price;
@@ -19,7 +22,7 @@ public class ProductBuilder
 
     public ProductBuilder AddTags(IEnumerable<string> tags)
     {
-        _product.Tags.AddRange(tags.Select(Tag.Create));
+        _product.AddTagRange(tags.Select(Tag.Create));
         return this;
     }
 
