@@ -33,6 +33,10 @@ public class ProductConfiguration : IEntityTypeConfiguration<Product>
             .IsRequired()
             .HasMaxLength(1500);
 
+        builder.Property(p => p.Price)
+            .IsRequired()
+            .HasColumnType("decimal");
+
         builder.OwnsMany(p => p.Tags,
                 pt =>
                 {
