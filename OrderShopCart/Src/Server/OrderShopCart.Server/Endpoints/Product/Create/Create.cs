@@ -3,6 +3,7 @@
 using Microsoft.AspNetCore.Mvc;
 using OrderShopCart.Application.CommandAndQuery;
 using OrderShopCart.Dto;
+using OrderShopCart.Server.Filters;
 
 namespace OrderShopCart.Server.Endpoints.Product;
 
@@ -26,6 +27,8 @@ public class CreateProductEndpoint : IEndpoint, IEndpointHandler<CreateProductRe
                    await HandlerAsync(request,
                    mediator,
                    mapper)
-               ).WithTags(EndpointSchema.ProductsTag);
+               )
+            .Validator<CreateProductValidator>()
+            .WithTags(EndpointSchema.ProductsTag);
     }
 }
