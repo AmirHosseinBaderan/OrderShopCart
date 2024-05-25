@@ -1,19 +1,25 @@
 ﻿
 
 using Microsoft.AspNetCore.Mvc;
+using OrderShopCart.Application.CommandAndQuery;
+using OrderShopCart.Dto;
 
 namespace OrderShopCart.Server.Endpoints.Product;
 
 public class CreateProductEndpoint : IEndpoint, IEndpointHandler<CreateProductRequest>
 {
-    public Task<ApiModel> HandlerAsync(CreateProductRequest request, IMediator mediator, IMapper mapper)
+    public async Task<ApiModel> HandlerAsync(CreateProductRequest request, IMediator mediator, IMapper mapper)
     {
+        CreateProductCommand command = mapper.Map<CreateProductCommand>(request);
+        var resutl = await mediator.Send(command);
 
+        return resutl.Match(Left: (status) => status.ToApiResult(),
+            Right: (product) => Success("", mapper.Map<ProductDto>(product)));
     }
 
     public void MapEndpoint(IEndpointRouteBuilder app)
     {
-        app.MapGet("/product/create",
+        app.MapPost("/product/create",
                async ([FromBody] CreateProductRequest request,
                IMapper mapper,
                IMediator mediator) =>
