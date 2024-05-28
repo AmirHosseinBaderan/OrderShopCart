@@ -49,6 +49,12 @@ public class ProductConfiguration : IEntityTypeConfiguration<Product>
 
         builder.Navigation(p => p.Tags)
             .Metadata
-            .SetField(DbContextSchema.Product.TagIdBackednField);
+            .SetField(DbContextSchema.Product.TagIdBackendField);
+
+        builder.HasMany(p => p.Groups);
+
+        builder.Navigation(p => p.Groups)
+            .Metadata
+            .SetField(DbContextSchema.Product.GroupIdBackendField);
     }
 }
