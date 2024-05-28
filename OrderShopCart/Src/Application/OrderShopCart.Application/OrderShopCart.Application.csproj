@@ -8,7 +8,4 @@
     <ProjectReference Include="..\..\Domain\OrderShopCart.Domain\OrderShopCart.Domain.csproj" />
     <ProjectReference Include="..\OrderShopCart.Builder\OrderShopCart.Builder.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CommandAndQuery\Group\Command\" />
-  </ItemGroup>
 </Project>
