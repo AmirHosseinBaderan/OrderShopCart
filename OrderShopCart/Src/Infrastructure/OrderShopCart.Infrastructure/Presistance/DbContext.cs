@@ -7,6 +7,8 @@ public class OrderDbContext(DbContextOptions<OrderDbContext> options) : DbContex
 {
     public DbSet<Product> Products => Set<Product>();
 
+    public DbSet<Group> Groups => Set<Group>();
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         var infrastructureAssebmly = typeof(IAssemblyMarker).Assembly;
