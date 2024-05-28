@@ -12,7 +12,11 @@ public static class DbContextSchema
 
         public const string TagTableName = "ProductTags";
 
-        public const string TagIdBackednField = "_tags";
+        public const string TagIdBackendField = "_tags";
+
+        public const string GroupsTableName = "ProductsGroups";
+
+        public const string GroupIdBackendField = "_groups";
     }
 
     public static class Group
@@ -20,5 +24,9 @@ public static class DbContextSchema
         public const string TableName = "Group";
 
         public const string ForigenKey = "GroupId";
+
+        public const string ProductsTableName = "ProductsGroups";
+
+        public const string ProductIdBackendField = "_products";
     }
 }
